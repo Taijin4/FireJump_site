@@ -1,0 +1,407 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar{
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+}
+
+.navbar ul li{
+  font-size: 1.5vw;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 0px;
+  margin: 0px 30px;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.navbar ul li:hover {
+    opacity: 1;
+}
+  
+.navbar ul li::before {
+    transition: 300ms;
+    height: 3px;
+    content: "";
+    position: absolute;
+    background-color: #fff;
+}
+  
+.navbar ul li::before {
+    width: 0%;
+    bottom: 10px;
+}
+  
+.navbar ul li:hover::before {
+    width:100%;
+}
+
+.navbar ul li::after{
+    content: "-";
+    position: absolute;
+    font-size: 1.5vw;
+    margin-left: 25px;
+}
+
+.navbar ul li:last-child:after{
+    content: none;
+}
+
+.imagebg{
+    position: absolute;
+    width: 22vw;
+    left: 39vw;
+    top: 15vw;
+   
+}
+
+.imagebg img{
+    width: 100%;
+}
+
+.coverbg{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(58, 57, 57);
+    opacity: 0.4;
+}
+
+.title1{
+    font-family: 'Secular One', sans-serif;
+    color: #fff;
+    text-decoration-line: overline;
+    margin-top: 0;
+    font-size: 5.5vw;
+    position: absolute;
+    top: 43%;
+    left: 47%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: top 2s, left 2s, text-shadow 2s;
+}
+
+.title:hover .title1{
+    top: 42%;
+    left: 46%;
+    text-shadow: 2px 15px #000;
+}
+
+.title2{
+    font-family: 'Secular One', sans-serif;
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3vh;
+    margin-top: 0;
+    font-size: 5.5vw;
+    position: absolute;
+    top: 55%;
+    left: 53%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    transition: top 2s, left 2s, text-shadow 2s;
+}
+
+.title:hover .title2{
+    top: 56%;
+    left: 54%;
+    text-shadow: 2px -15px #000;
+}
+
+.title{
+    cursor: pointer;
+}
+
+.btn{
+    z-index: 10;
+    position: absolute;
+    margin-left: 45.5vw;
+    margin-top: 77vh;
+}
+
+.btn button{
+    text-align: center;
+    width: 9vw;
+    height: 6vh;
+    border: none;
+    position: relative;
+    font-size: 1.1vw;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,77,0,1) 50%, rgba(255,153,0,1) 100%);
+    box-shadow: 0px 0px;
+    transition: text-align .3s, box-shadow .3s, width .3s, height .3s, margin-left .3s, margin-top .3s, font-size .3s;
+}
+
+.btn button:hover{
+    width: 9.5vw;
+    text-align: center;
+    height: 6.5vh;
+    margin-left: -0.125vw;
+    margin-top: -0.125vh;
+    font-size: 1.2vw;
+}
+
+
+.banner-text{
+    position: absolute;
+    top: 18%;
+    left: 70%;
+    width: 25%;
+    color: #fff;
+}
+
+.box{
+    font-size: 1.8vw;
+    width: 5vw;
+    font-weight: bold;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    font-family: century gothic;
+}
+
+.b1{
+    animation: ani1 25s infinite;
+}
+
+.b2{
+    animation: ani2 25s infinite;
+}
+
+.b3{
+    animation: ani3 25s infinite;
+}
+
+.b4{
+    animation: ani4 25s infinite;
+}
+
+.b5{
+    animation: ani5 25s infinite;
+}
+
+@keyframes ani1 {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani2 {
+    20%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 1;
+    }
+    40%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani3 {
+    40%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    60%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani4 {
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 0;
+    }
+}
+
+@keyframes ani5 {
+    80%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.underline{
+    position: absolute;
+    top: 10vh;
+    left: 0%;
+    width: 70%;
+    height: 0.5vh;
+    background-color: #fff;
+}
+
+.top-left{
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 32vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.top-left img{
+    width: 20vw;
+    float: left;
+}
+
+.top-left p{
+    float: right;
+    margin-left: -1.5vw;
+    font-size: 1.5vw;
+    color: #fff;
+    font-family: century gothic;
+    font-weight: 600;
+}
+
+.bottom-left{
+    position: absolute;
+    top: 68%;
+    left: 7%;
+    width: 32vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bottom-left img{
+    width: 20vw;
+    transition: transform 1s;
+}
+
+.bottom-left img:hover{
+    transform: scale(1.2);
+}
+
+.bottom-left p{
+    float: right;
+    margin-left: -3.5vw;
+    font-size: 1.7vw;
+    color: #fff;
+    font-family: century gothic;
+    font-weight: 600;
+}
+
+.bottom-right{
+    position: absolute;
+    top: 68%;
+    left: 70%;
+    width: 32vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.bottom-right img{
+    position: absolute;
+    width: 35vw;
+    transition: transform 1s;
+}
+
+.bottom-right p{
+    color: #fff;
+    font-family: century gothic;
+    font-size: 1.45vw;
+}
+
+.bottom-right .grimpez{
+    position: absolute;
+    top: -24.5vh;
+    left: 9.3vw;
+}
+
+.bottom-right .avec{
+    position: absolute;
+    top: -16.8vh;
+    left: 15.5vw;
+}
+
+.bottom-right .aide{
+    position: absolute;
+    top: -11vh;
+    left: 9vw;
+}
+
+
+
+.bottom-right .de{
+    position: absolute;
+    top: -1.5vh;
+    left: 13vw;
+}
+
+.bottom-right .tous{
+    position: absolute;
+    top: 2.2vh;
+    left: 20.2vw;
+}
+
+@media screen and (max-width: 1900px)
+{
+    .bottom-right .tous{
+        position: absolute;
+        top: 1.8vh;
+        left: 20.2vw;
+    }
+}
+
+.bottom-right .les{
+    position: absolute;
+    top: 7.3vh;
+    left: 10.8vw;
+}
+
+@media screen and (max-width: 1900px)
+{
+    .bottom-right .les{
+        top: 6.5vh;        
+    }
+}
+
+.bottom-right .blocs{
+    position: absolute;
+    top: 15.5vh;
+    left: 14.2vw;
+}
+
+@media screen and (max-width: 1900px)
+{
+    .bottom-right .blocs{
+        top: 14vh;        
+    }
+}
